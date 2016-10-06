@@ -44,6 +44,7 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 .hero {
 width: 100%;
 height: 22rem;
+position: relative;
 }
 
 .hero__container {
@@ -64,7 +65,7 @@ height: 22rem;
   background: #610202;
   color: #fff;
   text-align: center;
-  height: 25%;
+  padding: 3rem;
 }
 
 .container__flex {
@@ -75,6 +76,7 @@ height: 22rem;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin: 1rem;
 }
 
 .profile_user {
