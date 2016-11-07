@@ -17,13 +17,16 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 }
 
 .nav-bar {
-  background: #e4009d;
+  background: #A6235C;
   width: 100%;
   color: #fff;
 }
 
+.nav-group__left {
+  float: left;
+}
 .nav-group {
-  margin: 0;
+  margin-left: 1rem;
   font-size: 1.2rem;
   color: #fff;
 }
@@ -31,26 +34,28 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 .nav-group__item a {
   list-style-type: none;
   color: #fff;
-  padding-left: 9rem;
+  // padding-left: 9rem;
   text-decoration: none;
 }
 
 .nav-group__item {
   display: inline;
   color: #fff;
+  float: right;
+  padding-right: 4rem;
 
 }
 
 .hero {
-width: 100%;
-height: 22rem;
-position: relative;
+  width: 100%;
+  height: 22rem;
+  position: relative;
 }
 
 .hero__container {
   width: 100%;
   color: #fff;
-  background: green;
+  background: #0E203B;
   display: flex;
   flex-direction: row;
   height: 50%;
@@ -62,24 +67,72 @@ position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #610202;
+  background: #3D0C0E;
   color: #fff;
   text-align: center;
   padding: 3rem;
 }
 
+.section {
+  padding: 1rem;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.container {
+  max-width: 65rem;
+  margin: 0 auto;
+}
+
 .container__flex {
   display: flex;
+
 }
 
 .blog {
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
   margin: 1rem;
+  flex-grow: 1;
+  object-fit: cover;
+  width: calc(100% / 4 - 1rem - 1rem);
+
 }
 
 .profile_user {
-  width: calc(100% * 4 / 1rem );
   box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.4);
+}
+
+.image {
+  width: 100%;
+  padding: 0;
+}
+
+footer {
+  background: #333333;
+  text-decoration-color: white;
+  display: flex;
+  height: 6rem;
+}
+
+.nav-bottom {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.legal {
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-bottom_group1, .nav-bottom_group2 {
+  display: flex;
+  flex-direction: column;
+  color: white;
 }
