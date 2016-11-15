@@ -21,15 +21,17 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   overflow: auto;
   width: 100%;
   color: #fff;
+  padding: 1rem;
+}
+
+.nav-group {
+  font-size: 1.2rem;
+  color: #fff;
+  float: right;
 }
 
 .nav-group__left {
   float: left;
-}
-.nav-group {
-  margin-left: 1rem;
-  font-size: 1.2rem;
-  color: #fff;
 }
 
 .nav-group__item a {
@@ -42,7 +44,6 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 .nav-group__item {
   display: inline;
   color: #fff;
-  float: right;
   padding-right: 4rem;
 
 }
