@@ -4,5 +4,138 @@
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome/scss/font-awesome';
 @import 'box-sizing';
+@import 'reset';
 
-@import 'adonis';
+.full-page {
+  max-height: 100vh;
+}
+
+.top-nav {
+  width: 100%;
+  display: flex;
+  margin: 0;
+}
+
+.nav-bar {
+  background: #A6235C;
+  overflow: auto;
+  width: 100%;
+  color: #fff;
+  padding: 1rem;
+}
+
+.nav-group {
+  font-size: 1.2rem;
+  color: #fff;
+  float: right;
+}
+
+.nav-group__left {
+  float: left;
+}
+
+.nav-group__item a {
+  list-style-type: none;
+  color: #fff;
+  // padding-left: 9rem;
+  text-decoration: none;
+}
+
+.nav-group__item {
+  display: inline;
+  color: #fff;
+  padding-right: 4rem;
+
+}
+
+.hero__container {
+  min-height: 10rem;
+
+  color: #fff;
+  background: #0E203B;
+  display: flex;
+
+  justify-content: center;
+align-items: center;
+}
+
+.hero__container-absolute {
+  position: relative;
+  min-height: 10rem;
+  background: #3D0C0E;
+  color: #fff;
+
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.section {
+  padding: 1rem;
+}
+
+.blog-grid {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: -1rem;
+}
+
+.container {
+  max-width: 65rem;
+  margin: 0 auto;
+}
+
+.container__flex {
+  display: flex;
+
+}
+
+.blog {
+  margin: 1rem;
+  flex-grow: 1;
+  object-fit: cover;
+  width: calc(100% / 4 - 1rem - 1rem);
+  min-width: 8rem;
+}
+
+.profile_user {
+  box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.4);
+}
+
+.image {
+  width: 100%;
+  padding: 0;
+}
+
+footer {
+  background: #333333;
+  text-decoration-color: white;
+  height: 6rem;
+}
+
+.nav-bottom {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.legal {
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-bottom_group1, .nav-bottom_group2 {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
